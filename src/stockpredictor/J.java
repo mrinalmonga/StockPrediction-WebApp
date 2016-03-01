@@ -179,8 +179,8 @@ public class J {
 
 				buffer = new ArrayList<String>();
 				
-				String address = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22"+symbol+"%22)&env=store://datatables.org/alltableswithkeys&format=csv";
-				//String address = "http://ichart.finance.yahoo.com/table.csv?s="+symbol+"&a=06&b=9&c=1996&d=06&e=20&f=2010&g=d";
+				//String address = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22"+symbol+"%22)&env=store://datatables.org/alltableswithkeys&format=csv";
+				String address = "http://ichart.finance.yahoo.com/table.csv?s="+symbol+"&a=06&b=9&c=1996&d=06&e=20&f=2010&g=d";
 				URL pageLocation = new URL(address);
 				Scanner in = new Scanner(pageLocation.openStream());
 
