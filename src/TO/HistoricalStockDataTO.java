@@ -3,30 +3,21 @@ package TO;
 import java.sql.Date;
 
 public class HistoricalStockDataTO {
-	private Date date;
-	private String stockName;
+	private String date;
 	private String stockAcronym;
-	private double price;
+	private double Adj;
 	private double high;
 	private double low;
 	private double open;
 	private double close;
 	private double volume;
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
-	}
-
-	public String getStockName() {
-		return stockName;
-	}
-
-	public void setStockName(String stockName) {
-		this.stockName = stockName;
 	}
 
 	public String getStockAcronym() {
@@ -37,13 +28,7 @@ public class HistoricalStockDataTO {
 		this.stockAcronym = stockAcronym;
 	}
 
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
-	}
+	
 
 	public double getHigh() {
 		return high;
@@ -83,6 +68,14 @@ public class HistoricalStockDataTO {
 
 	public void setVolume(double volume) {
 		this.volume = volume;
+	}
+
+	public double getAdj() {
+		return Adj;
+	}
+
+	public void setAdj(double adj) {
+		Adj = adj;
 	}
 
 }

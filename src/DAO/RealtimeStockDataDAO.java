@@ -21,9 +21,9 @@ public class RealtimeStockDataDAO {
 		try {
 			
 			Statement st = conn.createStatement(); 
-			//System.out.println("INSERT INTO se_datacollect.realtimestockdata values ("+"\""+realTimeStockDataTO.getStockAcronym() +"\""+", "+ "\""+realTimeStockDataTO.getStockName() +"\""+","+ realTimeStockDataTO.getBookPrice()+", "+ realTimeStockDataTO.getVolume()+","+realTimeStockDataTO.getAsk()+","+realTimeStockDataTO.getBid()+"," +"\""+realTimeStockDataTO.getLastTradeTime()+"\""+","+realTimeStockDataTO.getLastTradePrice()+")");
+			System.out.println("INSERT INTO se_datacollect.realtimestockdata values ("+"\""+realTimeStockDataTO.getStockAcronym() +"\""+", "+ "\""+realTimeStockDataTO.getStockName() +"\""+","+ realTimeStockDataTO.getBookPrice()+", "+ realTimeStockDataTO.getVolume()+","+realTimeStockDataTO.getAsk()+","+realTimeStockDataTO.getBid()+"," +"\""+realTimeStockDataTO.getLastTradeTime()+"\""+","+realTimeStockDataTO.getLastTradePrice()+")");
 			
-			st.executeUpdate("INSERT INTO se_datacollect.realtimestockdata values ("+"\""+realTimeStockDataTO.getStockAcronym() +"\""+", "+ "\""+realTimeStockDataTO.getStockName() +"\""+","+ realTimeStockDataTO.getBookPrice()+", "+ realTimeStockDataTO.getVolume()+","+realTimeStockDataTO.getAsk()+","+realTimeStockDataTO.getBid()+"," +"\""+realTimeStockDataTO.getLastTradeTime()+"\""+","+realTimeStockDataTO.getLastTradePrice()+")");
+			//st.executeUpdate("INSERT INTO se_datacollect.realtimestockdata values ("+"\""+realTimeStockDataTO.getStockAcronym() +"\""+", "+ "\""+realTimeStockDataTO.getStockName() +"\""+","+ realTimeStockDataTO.getBookPrice()+", "+ realTimeStockDataTO.getVolume()+","+realTimeStockDataTO.getAsk()+","+realTimeStockDataTO.getBid()+"," +"\""+realTimeStockDataTO.getLastTradeTime()+"\""+","+realTimeStockDataTO.getLastTradePrice()+")");
 		
 			
 		} catch (Exception e) {
